@@ -37,7 +37,7 @@ class SkeletonInstaller
 
 
         self::recursiveJob("{$skeletonRoot}/skeleton/theme", $jobRename);
-        rename("{$skeletonRoot}/skeleton/theme/languages/wpskeleton.pot", "{$skeletonRoot}/theme/languages/" . strtolower($vendorName . $packageName) . ".pod");
+        rename("{$skeletonRoot}/skeleton/theme/languages/wpskeleton.pot", "{$skeletonRoot}/skeleton/theme/languages/" . strtolower($vendorName . $packageName) . ".pot");
 
 
         $jobRename(new \SplFileInfo("{$skeletonRoot}/skeleton/composer.json"));
